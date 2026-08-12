@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How much of the internet is original? · Principles vs Tribes</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<style>
+  :root { color-scheme: light dark; }
+  .viz-root {
+    color-scheme: light;
+    --surface-1:#fcfcfb; --plane:#f9f9f7; --text-primary:#0b0b0b; --text-secondary:#52514e;
+    --muted:#898781; --grid:#e1e0d9; --axis:#c3c2b7; --border:rgba(11,11,11,0.10);
+    --series-1:#2a78d6; --series-2:#eb6834; --deemph:#b4b2ab;
+    --brand-navy:#102854; --brand-orange:#e0581a; --btn-bg:#102854; --btn-bg-hover:#1c4587;
+    --h0:#0d366b; --h0t:#fff; --h1:#1c5cab; --h1t:#fff; --h2:#2a78d6; --h2t:#fff;
+    --h3:#1c5cab; --h3t:#fff; --h4:#3987e5; --h4t:#fff; --h5:#6da7ec; --h5t:#0b0b0b;
+    --h6:#5598e7; --h6t:#0b0b0b; --h7:#86b6ef; --h7t:#0b0b0b; --h8:#cde2fb; --h8t:#0b0b0b;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) .viz-root { color-scheme: dark;
+    --surface-1:#1a1a19; --plane:#0d0d0d; --text-primary:#ffffff; --text-secondary:#c3c2b7;
+    --muted:#898781; --grid:#2c2c2a; --axis:#383835; --border:rgba(255,255,255,0.10);
+    --series-1:#3987e5; --series-2:#d95926; --deemph:#56554f;
+    --brand-navy:#93b7ee; --brand-orange:#ea7b4e; --btn-bg:#c04a18; --btn-bg-hover:#a83f14;
+    --h0:#cde2fb; --h0t:#0b0b0b; --h1:#86b6ef; --h1t:#0b0b0b; --h2:#5598e7; --h2t:#0b0b0b;
+    --h3:#86b6ef; --h3t:#0b0b0b; --h4:#3987e5; --h4t:#ffffff; --h5:#1c5cab; --h5t:#ffffff;
+    --h6:#256abf; --h6t:#ffffff; --h7:#184f95; --h7t:#ffffff; --h8:#0d366b; --h8t:#ffffff; }
+  }
+  :root[data-theme="dark"] .viz-root { color-scheme: dark;
+    --surface-1:#1a1a19; --plane:#0d0d0d; --text-primary:#ffffff; --text-secondary:#c3c2b7;
+    --muted:#898781; --grid:#2c2c2a; --axis:#383835; --border:rgba(255,255,255,0.10);
+    --series-1:#3987e5; --series-2:#d95926; --deemph:#56554f;
+    --brand-navy:#93b7ee; --brand-orange:#ea7b4e; --btn-bg:#c04a18; --btn-bg-hover:#a83f14;
+    --h0:#cde2fb; --h0t:#0b0b0b; --h1:#86b6ef; --h1t:#0b0b0b; --h2:#5598e7; --h2t:#0b0b0b;
+    --h3:#86b6ef; --h3t:#0b0b0b; --h4:#3987e5; --h4t:#ffffff; --h5:#1c5cab; --h5t:#ffffff;
+    --h6:#256abf; --h6t:#ffffff; --h7:#184f95; --h7t:#ffffff; --h8:#0d366b; --h8t:#ffffff; }
+
+  * { box-sizing: border-box; }
+  html, body { margin:0; padding:0; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background: var(--plane);
+    color: var(--text-primary); -webkit-font-smoothing: antialiased; }
+  .viz-root { background: var(--plane); color: var(--text-primary); max-width:1040px; margin:0 auto; padding:40px 24px 72px; }
+
+  .masthead { display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap; margin-bottom:12px; }
+  .brand { display:flex; align-items:center; gap:12px; text-decoration:none; }
+  .brand img { width:46px; height:auto; display:block; background:#fff; border-radius:7px; padding:3px; }
+  .brand-name { font-size:15px; font-weight:700; letter-spacing:.045em; text-transform:uppercase; line-height:1.1; }
+  .brand-name .b1 { color:var(--brand-navy); } .brand-name .bvs { color:var(--muted); font-weight:600; font-size:12.5px; }
+  .brand-name .b2 { color:var(--brand-orange); }
+  .masthead-right { display:flex; align-items:center; gap:14px; }
+  .brand-link { font-size:12.5px; color:var(--text-secondary); text-decoration:none; white-space:nowrap; }
+  .brand-link:hover { color:var(--brand-orange); }
+  .theme-btn { font:inherit; font-size:12.5px; color:var(--text-secondary); background:var(--surface-1);
+    border:1px solid var(--border); border-radius:999px; padding:5px 13px; cursor:pointer; }
+  .theme-btn:hover { color:var(--text-primary); }
+  .brand-rule { display:flex; height:2px; margin-bottom:30px; border-radius:1px; overflow:hidden; }
+  .brand-rule i { flex:1; } .brand-rule i:first-child { background:var(--brand-navy); } .brand-rule i:last-child { background:var(--brand-orange); }
+
+  h1 { font-size:30px; line-height:1.2; font-weight:650; letter-spacing:-0.02em; margin:0 0 12px; }
+  .dek { color:var(--text-secondary); font-size:15.5px; line-height:1.55; margin:0 0 30px; max-width:70ch; }
+
+  .card { background:var(--surface-1); border:1px solid var(--border); border-radius:12px; padding:24px 26px 22px; margin-bottom:22px; }
+  .card h2 { font-size:17.5px; font-weight:600; letter-spacing:-0.01em; margin:0 0 5px; }
+  .card .sub { font-size:13.5px; color:var(--text-secondary); margin:0 0 20px; line-height:1.5; max-width:82ch; }
+
+  .hero-card { display:flex; gap:40px; flex-wrap:wrap; align-items:flex-start; }
+  .hero-num { font-size:60px; font-weight:650; line-height:1; letter-spacing:-0.03em; }
+  .hero-cap { font-size:12.5px; color:var(--text-secondary); margin-top:10px; line-height:1.45; max-width:26ch; }
+  .hero-body { flex:1 1 380px; font-size:14.5px; line-height:1.6; color:var(--text-secondary); }
+  .hero-body strong { color:var(--text-primary); font-weight:600; }
+
+  .kpis { display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:14px; margin-bottom:22px; }
+  .tile { background:var(--surface-1); border:1px solid var(--border); border-radius:12px; padding:16px 18px 15px; }
+  .tile .lab { font-size:12.5px; color:var(--text-secondary); line-height:1.4; }
+  .tile .val { font-size:27px; font-weight:650; letter-spacing:-0.025em; margin-top:7px; line-height:1; }
+  .tile .note { font-size:11.5px; color:var(--muted); margin-top:7px; line-height:1.4; }
+
+  .legend { display:flex; flex-wrap:wrap; gap:20px; margin-bottom:14px; }
+  .legend .item { display:flex; align-items:center; gap:8px; font-size:12.5px; color:var(--text-secondary); }
+  .legend .key { width:11px; height:11px; border-radius:50%; flex:0 0 auto; }
+
+  .chart-wrap { width:100%; overflow:visible; position:relative; }
+  svg { display:block; width:100%; height:auto; overflow:visible; }
+  .gridline { stroke:var(--grid); stroke-width:1; }
+  .axisline { stroke:var(--axis); stroke-width:1; }
+  .tick { fill:var(--muted); font-size:11.5px; font-variant-numeric:tabular-nums; }
+  .dlabel { fill:var(--text-secondary); font-size:11.5px; font-weight:500; }
+  .dlabel-strong { fill:var(--text-primary); font-size:12px; font-weight:600; }
+  .rowlab { fill:var(--text-primary); font-size:12.5px; font-weight:600; }
+  .rowsub { fill:var(--muted); font-size:11px; }
+  .hit { fill:transparent; cursor:pointer; }
+  .whisk { stroke:var(--text-secondary); stroke-width:1.5; }
+
+  .tooltip { position:absolute; pointer-events:none; opacity:0; transition:opacity .1s ease;
+    background:var(--surface-1); color:var(--text-primary); border:1px solid var(--border); border-radius:8px;
+    padding:9px 12px; font-size:12.5px; line-height:1.5; box-shadow:0 4px 16px rgba(0,0,0,.13); z-index:10; max-width:280px; }
+  .tooltip .tt-t { font-weight:600; margin-bottom:3px; } .tooltip .tt-r { color:var(--text-secondary); }
+  .tooltip .tt-v { color:var(--text-primary); font-weight:600; }
+
+  table { border-collapse:collapse; width:100%; margin-top:12px; font-size:12.5px; }
+  th, td { text-align:left; padding:7px 12px 7px 0; border-bottom:1px solid var(--grid); vertical-align:top; line-height:1.45; }
+  th { color:var(--text-secondary); font-weight:600; font-size:11.5px; text-transform:uppercase; letter-spacing:.04em; }
+  td.num, th.num { text-align:right; font-variant-numeric:tabular-nums; padding-right:16px; white-space:nowrap; }
+  td.pop { color:var(--text-secondary); }
+  details.tableview { margin-top:18px; border-top:1px solid var(--border); padding-top:12px; }
+  details.tableview summary { font-size:12.5px; color:var(--text-secondary); cursor:pointer; list-style:none; display:inline-flex; align-items:center; gap:6px; }
+  details.tableview summary::-webkit-details-marker { display:none; }
+  details.tableview summary::before { content:"\25B8"; font-size:10px; }
+  details.tableview[open] summary::before { content:"\25BE"; }
+
+  .callout { border-left:2px solid var(--series-2); padding:2px 0 2px 14px; margin:18px 0 0;
+    font-size:13.5px; line-height:1.6; color:var(--text-secondary); }
+  .callout strong { color:var(--text-primary); font-weight:600; }
+  .grade { display:inline-block; font-size:10px; letter-spacing:.05em; text-transform:uppercase; font-weight:600;
+    white-space:nowrap; border:1px solid var(--border); border-radius:4px; padding:2px 6px; color:var(--text-secondary); }
+  .grade.weak { color:var(--muted); border-style:dashed; }
+  .grade.best { color:var(--text-primary); border-color:var(--text-secondary); }
+  .debunk { margin:0; padding:0; list-style:none; }
+  .debunk li { border-left:2px solid var(--series-2); padding:1px 0 1px 14px; margin-bottom:15px;
+    font-size:13px; line-height:1.6; color:var(--text-secondary); }
+  .debunk .claim { color:var(--text-primary); font-weight:600; display:block; margin-bottom:2px; }
+  .conf { margin:0; padding:0; list-style:none; }
+  .conf li { display:flex; gap:14px; padding:13px 0; border-bottom:1px solid var(--grid);
+    font-size:13.5px; line-height:1.55; color:var(--text-secondary); }
+  .conf li:last-child { border-bottom:none; } .conf .tag { flex:0 0 92px; } .conf .claim { color:var(--text-primary); font-weight:600; }
+  .note-list { font-size:13px; line-height:1.65; color:var(--text-secondary); margin:0; padding-left:18px; }
+  .note-list li { margin-bottom:10px; } .note-list strong { color:var(--text-primary); font-weight:600; }
+  .src { font-size:12.5px; line-height:1.7; color:var(--text-secondary); margin:0; padding-left:18px; }
+  .src li { margin-bottom:8px; }
+  a { color:var(--series-1); text-decoration:none; } a:hover { text-decoration:underline; }
+  .meta { font-size:11.5px; color:var(--muted); margin-top:26px; line-height:1.6; }
+
+  .brandfoot { text-align:center; padding:34px 26px 32px; }
+  .brandfoot img { width:132px; height:auto; display:block; margin:0 auto 16px; background:#fff; border-radius:10px; padding:8px; }
+  .brandfoot p { font-size:13.5px; color:var(--text-secondary); margin:0 0 18px; line-height:1.6; }
+  .brand-btn { display:inline-block; font-size:14px; font-weight:600; text-decoration:none; color:#fff;
+    background:var(--btn-bg); border-radius:999px; padding:11px 24px; transition:background .12s ease; }
+  .brand-btn:hover { background:var(--btn-bg-hover); color:#fff; text-decoration:none; }
+</style>
+</head>
+<body>
+<div class="viz-root" id="root">
+
+  <div class="masthead">
+    <a class="brand" href="https://principlesvstribes.substack.com/" target="_blank" rel="noopener">
+      <img src="data:image/png;base64,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" alt="Principles vs Tribes">
+      <span class="brand-name"><span class="b1">Principles</span> <span class="bvs">vs</span> <span class="b2">Tribes</span></span>
+    </a>
+    <div class="masthead-right">
+      <a class="brand-link" href="https://principlesvstribes.substack.com/" target="_blank" rel="noopener">principlesvstribes.substack.com &#8599;</a>
+      <button class="theme-btn" id="themeBtn" type="button">Dark mode</button>
+    </div>
+  </div>
+  <div class="brand-rule"><i></i><i></i></div>
+
+  <h1>How much of the internet is original writing, and how much is the scanned past?</h1>
+  <p class="dek">The internet is overwhelmingly made of text written for the internet. Everything humanity printed before it &#8212; every book, every newspaper, every scientific paper, from Gutenberg to 1995 &#8212; is a rounding error by comparison, and the part actually readable online is smaller still. But the size of that gap swings by a factor of six hundred depending on two definitional choices nobody surfaces, and the reason so little of the printed past is online turns out to have nothing to do with scanning technology.</p>
+
+  <div class="card hero-card">
+    <div>
+      <div class="hero-num">1 : 300</div>
+      <div class="hero-cap">Freely readable pre&#8209;internet text, against born&#8209;digital text on the indexed web</div>
+    </div>
+    <div class="hero-body">
+      Roughly <strong>1.5&#8211;2 trillion tokens</strong> of digitised pre&#8209;internet text is freely readable on the open web, against an indexed web of about <strong>510 trillion tokens</strong>. That is the answer to the question as normally asked.
+      <br><br>
+      It is also the narrowest of four defensible answers. Count everything ever printed rather than what is readable, and the ratio tightens to about <strong>1 : 8</strong>. Both numbers are correct. They answer different questions.
+    </div>
+  </div>
+
+  <div class="kpis">
+    <div class="tile"><div class="lab">Indexed web, plain text</div><div class="val">510T</div>
+      <div class="note">tokens (~1.75 PB) &#183; Epoch AI &#183; 95% CI 130T&#8211;2,100T</div></div>
+    <div class="tile"><div class="lab">All text ever printed</div><div class="val">50&#8211;85T</div>
+      <div class="note">tokens &#183; books plus newspapers, most of it never digitised</div></div>
+    <div class="tile"><div class="lab">Of that, freely readable online</div><div class="val">2.6%</div>
+      <div class="note">a 39:1 loss from print to open web</div></div>
+    <div class="tile"><div class="lab">Project Gutenberg&#8217;s share of the web</div><div class="val">1 in 62,500</div>
+      <div class="note">78,000 titles &#183; 28 GB &#183; 0.0016%</div></div>
+  </div>
+
+  <!-- CHART 1 -->
+  <div class="card">
+    <h2>Four magnitudes, on a scale that can hold them all</h2>
+    <p class="sub">The span from the smallest quantity here to the largest is roughly 300&#215;, so this is a <strong style="color:var(--text-primary)">logarithmic axis &#8212; each gridline is ten times the one before it</strong>. Dots are midpoints; the bars through them are the published ranges. Reading left to right, each step up is a different question about what &#8220;pre&#8209;internet text on the internet&#8221; means.</p>
+
+    <div class="legend">
+      <div class="item"><span class="key" style="background:var(--series-2)"></span> Born&#8209;digital web text</div>
+      <div class="item"><span class="key" style="background:var(--series-1)"></span> Pre&#8209;internet print</div>
+    </div>
+
+    <div class="chart-wrap" id="wrap1">
+      <svg viewBox="0 0 960 300" role="img" aria-label="Logarithmic dot plot: indexed web 510 trillion tokens; all print ever 50 to 85 trillion; scanned and OCRd 11 to 14 trillion; freely readable 1.5 to 2 trillion">
+        <line class="gridline" x1="200" y1="40" x2="200" y2="255"/>
+        <line class="gridline" x1="370" y1="40" x2="370" y2="255"/>
+        <line class="gridline" x1="540" y1="40" x2="540" y2="255"/>
+        <line class="gridline" x1="710" y1="40" x2="710" y2="255"/>
+        <line class="gridline" x1="880" y1="40" x2="880" y2="255"/>
+        <line class="axisline" x1="200" y1="255" x2="880" y2="255"/>
+        <text class="tick" x="200" y="273" text-anchor="middle">1T</text>
+        <text class="tick" x="370" y="273" text-anchor="middle">10T</text>
+        <text class="tick" x="540" y="273" text-anchor="middle">100T</text>
+        <text class="tick" x="710" y="273" text-anchor="middle">1,000T</text>
+        <text class="tick" x="880" y="273" text-anchor="middle">10,000T</text>
+        <text class="tick" x="540" y="292" text-anchor="middle" style="fill:var(--muted)">Trillion tokens of plain text &#183; logarithmic</text>
+
+        <text class="rowlab" x="185" y="57"  text-anchor="end">The indexed web</text>
+        <text class="rowsub" x="185" y="72"  text-anchor="end">with duplicates</text>
+        <line class="whisk" x1="559.4" y1="60" x2="764.8" y2="60"/>
+        <line class="whisk" x1="559.4" y1="54" x2="559.4" y2="66"/>
+        <line class="whisk" x1="764.8" y1="54" x2="764.8" y2="66"/>
+        <circle cx="660.3" cy="60" r="7" fill="var(--series-2)" stroke="var(--surface-1)" stroke-width="2"/>
+        <text class="dlabel-strong" x="780" y="64" text-anchor="start">510T</text>
+
+        <text class="rowlab" x="185" y="112" text-anchor="end">All print ever</text>
+        <text class="rowsub" x="185" y="127" text-anchor="end">mostly never scanned</text>
+        <line class="whisk" x1="488.8" y1="115" x2="528.0" y2="115"/>
+        <line class="whisk" x1="488.8" y1="109" x2="488.8" y2="121"/>
+        <line class="whisk" x1="528.0" y1="109" x2="528.0" y2="121"/>
+        <circle cx="511.0" cy="115" r="7" fill="var(--series-1)" stroke="var(--surface-1)" stroke-width="2"/>
+        <text class="dlabel" x="545" y="119" text-anchor="start">50&#8211;85T &#183; 1:8 vs web</text>
+
+        <text class="rowlab" x="185" y="167" text-anchor="end">Scanned and OCR&#8217;d</text>
+        <text class="rowsub" x="185" y="182" text-anchor="end">machine-readable, locked</text>
+        <line class="whisk" x1="377.0" y1="170" x2="394.8" y2="170"/>
+        <line class="whisk" x1="377.0" y1="164" x2="377.0" y2="176"/>
+        <line class="whisk" x1="394.8" y1="164" x2="394.8" y2="176"/>
+        <circle cx="386.5" cy="170" r="7" fill="var(--series-1)" stroke="var(--surface-1)" stroke-width="2"/>
+        <text class="dlabel" x="412" y="174" text-anchor="start">11&#8211;14T &#183; 1:41 vs web</text>
+
+        <text class="rowlab" x="185" y="222" text-anchor="end">Freely readable online</text>
+        <text class="rowsub" x="185" y="237" text-anchor="end">no paywall or agreement</text>
+        <line class="whisk" x1="229.9" y1="225" x2="251.2" y2="225"/>
+        <line class="whisk" x1="229.9" y1="219" x2="229.9" y2="231"/>
+        <line class="whisk" x1="251.2" y1="219" x2="251.2" y2="231"/>
+        <circle cx="241.3" cy="225" r="7" fill="var(--series-1)" stroke="var(--surface-1)" stroke-width="2"/>
+        <text class="dlabel-strong" x="268" y="229" text-anchor="start">1.5&#8211;2T &#183; 1:300 vs web</text>
+
+        <circle class="hit" cx="660.3" cy="60"  r="18" data-t="The indexed web" data-r="Epoch AI, ICML 2024: 250B pages x 7,000 measured bytes of plain text per page. 95% CI 130T-2,100T" data-v="510 trillion tokens (~1.75 PB)"/>
+        <circle class="hit" cx="511.0" cy="115" r="18" data-t="All text ever printed" data-r="129.9M books (Google, 2010) at ~500KB each = 16T, plus a derived 33-66T for newspapers. Most has never been digitised" data-v="50-85 trillion tokens"/>
+        <circle class="hit" cx="386.5" cy="170" r="18" data-t="Scanned and OCR'd" data-r="~50-60M distinct volumes plus ~1.5-2B newspaper pages. Exists as machine-readable text somewhere, but mostly behind paywalls, agreements or snippet view" data-v="11-14 trillion tokens"/>
+        <circle class="hit" cx="241.3" cy="225" r="18" data-t="Freely readable on the open internet" data-r="Deduplicated. Dominated by HathiTrust's public-domain full text (1.35T); Gutenberg, Chronicling America and case law are rounding errors within it" data-v="1.5-2 trillion tokens"/>
+      </svg>
+      <div class="tooltip" id="tip1"></div>
+    </div>
+
+    <p class="callout"><strong>A scale check that makes this concrete.</strong> One monthly Common Crawl snapshot yields about <strong>20 TB of extracted plain text</strong>. All the OCR text in HathiTrust&#8217;s 19 million scanned volumes comes to about <strong>15 TB</strong>. The web produces more text every three weeks than the largest academic book-digitisation project on earth has accumulated in two decades.</p>
+  </div>
+
+  <!-- CHART 2 -->
+  <div class="card">
+    <h2>Where the printed past disappears</h2>
+    <p class="sub">Two chokepoints stand between text that exists in print and text a person can read online. The first is scanning. The second is law. The second is the larger of the two, and it is the one that gets ignored.</p>
+
+    <div class="chart-wrap" id="wrap2">
+      <svg viewBox="0 0 900 275" role="img" aria-label="Funnel: all print ever 67.5 trillion tokens, dropping 81 percent to 12.5 trillion scanned, then 86 percent to 1.75 trillion freely readable">
+        <line class="gridline" x1="382.2" y1="35" x2="382.2" y2="222"/>
+        <line class="gridline" x1="554.4" y1="35" x2="554.4" y2="222"/>
+        <line class="gridline" x1="726.7" y1="35" x2="726.7" y2="222"/>
+        <line class="axisline" x1="210" y1="222" x2="830" y2="222"/>
+        <text class="tick" x="210"   y="240" text-anchor="middle">0</text>
+        <text class="tick" x="382.2" y="240" text-anchor="middle">25T</text>
+        <text class="tick" x="554.4" y="240" text-anchor="middle">50T</text>
+        <text class="tick" x="726.7" y="240" text-anchor="middle">75T</text>
+        <text class="tick" x="520"   y="262" text-anchor="middle" style="fill:var(--muted)">Trillion tokens &#183; linear</text>
+
+        <text class="rowlab" x="196" y="60" text-anchor="end">All print ever</text>
+        <path d="M210,44 h451 a4,4 0 0 1 4,4 v14 a4,4 0 0 1 -4,4 h-451 z" fill="var(--series-1)"/>
+        <line class="whisk" x1="554.4" y1="49" x2="795.6" y2="49"/>
+        <line class="whisk" x1="554.4" y1="44" x2="554.4" y2="54"/>
+        <line class="whisk" x1="795.6" y1="44" x2="795.6" y2="54"/>
+        <text class="dlabel-strong" x="810" y="60" text-anchor="start">67.5T</text>
+
+        <text class="dlabel" x="230" y="93" text-anchor="start" style="fill:var(--series-2);font-weight:600">&#8595; 81% never scanned</text>
+
+        <text class="rowlab" x="196" y="121" text-anchor="end">Scanned + OCR&#8217;d</text>
+        <path d="M210,105 h82 a4,4 0 0 1 4,4 v14 a4,4 0 0 1 -4,4 h-82 z" fill="var(--series-1)"/>
+        <line class="whisk" x1="285.8" y1="110" x2="306.4" y2="110"/>
+        <line class="whisk" x1="285.8" y1="105" x2="285.8" y2="115"/>
+        <line class="whisk" x1="306.4" y1="105" x2="306.4" y2="115"/>
+        <text class="dlabel-strong" x="320" y="121" text-anchor="start">12.5T</text>
+
+        <text class="dlabel" x="230" y="154" text-anchor="start" style="fill:var(--series-2);font-weight:600">&#8595; 86% locked behind copyright, paywalls or access agreements</text>
+
+        <text class="rowlab" x="196" y="182" text-anchor="end">Freely readable</text>
+        <path d="M210,166 h8 a4,4 0 0 1 4,4 v14 a4,4 0 0 1 -4,4 h-8 z" fill="var(--series-1)"/>
+        <text class="dlabel-strong" x="236" y="182" text-anchor="start">1.75T</text>
+        <text class="dlabel" x="290" y="182" text-anchor="start">&#8212; 2.6% of everything ever printed</text>
+
+        <rect class="hit" x="210" y="40"  width="600" height="30" data-t="All text ever printed" data-r="129.9M books + a derived 10-20B newspaper pages" data-v="50-85T tokens"/>
+        <rect class="hit" x="210" y="101" width="600" height="30" data-t="Scanned and OCR'd" data-r="Google Books 40M volumes, HathiTrust 19M, Internet Archive ~51M text items, ~1.5-2B newspaper pages" data-v="11-14T tokens"/>
+        <rect class="hit" x="210" y="162" width="600" height="30" data-t="Freely readable, deduplicated" data-r="HathiTrust PD full text 1.35T dominates; Gutenberg 0.008T; Chronicling America 0.076T; Caselaw 0.010T" data-v="1.5-2T tokens"/>
+      </svg>
+      <div class="tooltip" id="tip2"></div>
+    </div>
+
+    <p class="callout"><strong>The bottleneck is legal, not technical.</strong> Google has run 40 million books through its scanners and releases bulk text for <em>none</em> of them &#8212; not even the public-domain ones. HathiTrust will give researchers 5.4 TB of public-domain page text, but only under a signed agreement, locked to a single IP address, non-commercial, with a deletion obligation. Newspapers.com holds over a billion pages behind a subscription. The machines finished their work; the rights did not.</p>
+
+    <details class="tableview"><summary>Table view</summary>
+      <table><thead><tr><th>Stage</th><th class="num">Tokens</th><th class="num">Surviving</th><th>What removes the rest</th></tr></thead>
+      <tbody>
+        <tr><td>Exists in print</td><td class="num">50&#8211;85T</td><td class="num">100%</td><td class="pop">&#8212;</td></tr>
+        <tr><td>Scanned as page images</td><td class="num">11&#8211;14T</td><td class="num">~19%</td><td class="pop">Never digitised. Roughly 90% of newspaper titles and the large majority of books have never been scanned</td></tr>
+        <tr><td>OCR&#8217;d to machine-readable text</td><td class="num">11&#8211;14T</td><td class="num">~19%</td><td class="pop">Effectively nothing &#8212; OCR is mandatory for search, so scanning implies OCR at scale</td></tr>
+        <tr><td>Freely readable on the open web</td><td class="num">1.5&#8211;2T</td><td class="num">~2.6%</td><td class="pop">Copyright, paywalls, snippet-only view, and institutional access agreements</td></tr>
+      </tbody></table>
+    </details>
+  </div>
+
+  <!-- CHART 3 -->
+  <div class="card">
+    <h2>The printed past is mostly newspapers, not books</h2>
+    <p class="sub">Discussions of digitising the past are almost entirely about books. But newspapers plausibly hold two to four times as much text as every book ever published &#8212; and they are the least accessible category of all.</p>
+
+    <div class="chart-wrap" id="wrap3">
+      <svg viewBox="0 0 900 250" role="img" aria-label="Bar chart: newspapers 33 to 66 trillion tokens, books 16.2 trillion, everything else 0.21 trillion">
+        <line class="gridline" x1="407.1" y1="35" x2="407.1" y2="200"/>
+        <line class="gridline" x1="584.3" y1="35" x2="584.3" y2="200"/>
+        <line class="gridline" x1="761.4" y1="35" x2="761.4" y2="200"/>
+        <line class="axisline" x1="230" y1="200" x2="850" y2="200"/>
+        <text class="tick" x="230"   y="218" text-anchor="middle">0</text>
+        <text class="tick" x="407.1" y="218" text-anchor="middle">20T</text>
+        <text class="tick" x="584.3" y="218" text-anchor="middle">40T</text>
+        <text class="tick" x="761.4" y="218" text-anchor="middle">60T</text>
+        <text class="tick" x="540"   y="240" text-anchor="middle" style="fill:var(--muted)">Trillion tokens</text>
+
+        <text class="rowlab" x="216" y="59" text-anchor="end">Newspapers</text>
+        <text class="rowsub" x="216" y="74" text-anchor="end">~10&#8211;20B pages ever printed</text>
+        <path d="M230,48 h434 a4,4 0 0 1 4,4 v14 a4,4 0 0 1 -4,4 h-434 z" fill="var(--series-1)"/>
+        <line class="whisk" x1="522.3" y1="59" x2="814.6" y2="59"/>
+        <line class="whisk" x1="522.3" y1="53" x2="522.3" y2="65"/>
+        <line class="whisk" x1="814.6" y1="53" x2="814.6" y2="65"/>
+        <text class="dlabel-strong" x="828" y="63" text-anchor="start">33&#8211;66T</text>
+
+        <text class="rowlab" x="216" y="114" text-anchor="end">Books</text>
+        <text class="rowsub" x="216" y="129" text-anchor="end">129,864,880 ever published</text>
+        <path d="M230,103 h139 a4,4 0 0 1 4,4 v14 a4,4 0 0 1 -4,4 h-139 z" fill="var(--series-1)"/>
+        <text class="dlabel-strong" x="386" y="118" text-anchor="start">16.2T</text>
+
+        <text class="rowlab" x="216" y="169" text-anchor="end">Everything else</text>
+        <text class="rowsub" x="216" y="184" text-anchor="end">science, law, government, Gutenberg</text>
+        <path d="M230,158 h2 v22 h-2 z" fill="var(--series-1)"/>
+        <text class="dlabel-strong" x="244" y="173" text-anchor="start">0.21T</text>
+        <text class="dlabel" x="292" y="173" text-anchor="start">&#8212; invisible at this scale, and that is the point</text>
+
+        <rect class="hit" x="230" y="44"  width="620" height="32" data-t="Newspapers" data-r="Derived: ~25,000 titles x ~250 issues x ~40 pages, integrated over ~200 years, at 3,313 measured tokens per page. Low confidence — no scholarly estimate of total newspaper pages exists" data-v="33-66 trillion tokens"/>
+        <rect class="hit" x="230" y="99"  width="620" height="32" data-t="Books" data-r="Google's 2010 count of 129,864,880 distinct book editions, at ~500KB of plain text each (validated three ways: Books3 551KB, MassiveText 525KB, HathiTrust 812KB incl. serials)" data-v="16.2 trillion tokens"/>
+        <rect class="hit" x="230" y="154" width="620" height="32" data-t="Everything else" data-r="Pre-1995 science ~190B, Caselaw Access Project 9.5B, Federal Register ~2.5B, Project Gutenberg 8.4B" data-v="~0.21 trillion tokens"/>
+      </svg>
+      <div class="tooltip" id="tip3"></div>
+    </div>
+
+    <p class="callout"><strong>Newspapers.com alone holds about as much text as every book HathiTrust has ever scanned</strong> &#8212; over a billion pages &#8212; and none of it is on the open web. The Library of Congress&#8217;s Chronicling America, the one fully open newspaper corpus, is 23 million pages: 2.3% of Newspapers.com by page count, and about one part in six hundred of all the newspaper text ever printed.</p>
+
+    <p class="callout"><strong>Treat the newspaper figure as an order of magnitude, not a measurement.</strong> No scholarly estimate of total newspaper pages ever printed appears to exist; this is derived from title counts, issue frequency and page counts, integrated over roughly two centuries. The per-page conversion is solid &#8212; 3,313 tokens per page, measured directly from OCR of 20 million real pages &#8212; but the page count it multiplies is not.</p>
+  </div>
+
+  <!-- CHART 4 -->
+  <div class="card">
+    <h2>Why the answer swings by 600&#215;</h2>
+    <p class="sub">Two choices determine the number you get, and neither is usually stated. Which <em>tier</em> of pre&#8209;internet text you count, and which point in the web estimate&#8217;s very wide confidence interval you compare it against. Every cell below is defensible from published figures.</p>
+
+    <div class="chart-wrap" id="wrap4">
+      <svg viewBox="0 0 780 300" role="img" aria-label="Matrix of pre-internet print as a percentage of the web, across three print tiers and three web estimates, ranging from 51.9 percent to 0.08 percent">
+        <text class="tick" x="325" y="46" text-anchor="middle">Web, low (130T)</text>
+        <text class="tick" x="470" y="46" text-anchor="middle">Web, central (510T)</text>
+        <text class="tick" x="615" y="46" text-anchor="middle">Web, high (2,100T)</text>
+
+        <text class="rowlab" x="246" y="86"  text-anchor="end">All print ever</text>
+        <text class="rowsub" x="246" y="100" text-anchor="end">50&#8211;85T</text>
+        <rect x="256" y="60" width="138" height="58" rx="4" fill="var(--h0)"/>
+        <text x="325" y="95" text-anchor="middle" font-size="17" font-weight="650" fill="var(--h0t)">51.9%</text>
+        <rect x="401" y="60" width="138" height="58" rx="4" fill="var(--h1)"/>
+        <text x="470" y="95" text-anchor="middle" font-size="17" font-weight="650" fill="var(--h1t)">13.2%</text>
+        <rect x="546" y="60" width="138" height="58" rx="4" fill="var(--h2)"/>
+        <text x="615" y="95" text-anchor="middle" font-size="17" font-weight="650" fill="var(--h2t)">3.2%</text>
+
+        <text class="rowlab" x="246" y="151" text-anchor="end">Scanned + OCR&#8217;d</text>
+        <text class="rowsub" x="246" y="165" text-anchor="end">11&#8211;14T</text>
+        <rect x="256" y="125" width="138" height="58" rx="4" fill="var(--h3)"/>
+        <text x="325" y="160" text-anchor="middle" font-size="17" font-weight="650" fill="var(--h3t)">9.6%</text>
+        <rect x="401" y="125" width="138" height="58" rx="4" fill="var(--h4)"/>
+        <text x="470" y="160" text-anchor="middle" font-size="17" font-weight="650" fill="var(--h4t)">2.5%</text>
+        <rect x="546" y="125" width="138" height="58" rx="4" fill="var(--h5)"/>
+        <text x="615" y="160" text-anchor="middle" font-size="17" font-weight="650" fill="var(--h5t)">0.6%</text>
+
+        <text class="rowlab" x="246" y="216" text-anchor="end">Freely readable</text>
+        <text class="rowsub" x="246" y="230" text-anchor="end">1.5&#8211;2T</text>
+        <rect x="256" y="190" width="138" height="58" rx="4" fill="var(--h6)"/>
+        <text x="325" y="225" text-anchor="middle" font-size="17" font-weight="650" fill="var(--h6t)">1.35%</text>
+        <rect x="401" y="190" width="138" height="58" rx="4" fill="var(--h7)"/>
+        <text x="470" y="225" text-anchor="middle" font-size="17" font-weight="650" fill="var(--h7t)">0.34%</text>
+        <rect x="546" y="190" width="138" height="58" rx="4" fill="var(--h8)"/>
+        <text x="615" y="225" text-anchor="middle" font-size="17" font-weight="650" fill="var(--h8t)">0.08%</text>
+
+        <text class="tick" x="470" y="275" text-anchor="middle" style="fill:var(--muted)">Pre-internet print as a share of born-digital web text. Colour reinforces magnitude; every value is printed.</text>
+      </svg>
+      <div class="tooltip" id="tip4"></div>
+    </div>
+
+    <p class="callout"><strong>Top-left to bottom-right is a 623&#215; range, and both corners are honestly sourced.</strong> Within that, the <em>tier</em> choice is worth 39&#215; and the <em>web estimate</em> choice is worth 16&#215;. Anyone quoting a single ratio for this question has silently made both choices on your behalf. The most defensible framing is to state the tier explicitly and carry the web interval: <strong>freely readable pre&#8209;internet text is 0.08%&#8211;1.35% of the born&#8209;digital web, most likely around 0.34%.</strong></p>
+  </div>
+
+  <!-- COMPRESSION CASCADE -->
+  <div class="card">
+    <h2>Why raw byte counts mislead in both directions</h2>
+    <p class="sub">Almost every large number in this field measures a container rather than its contents. The errors run in opposite directions on the two sides of the comparison, which is what makes naive ratios so unreliable.</p>
+    <ul class="note-list">
+      <li><strong>On the web side, raw crawl bytes overstate text by ~200:1.</strong> A monthly Common Crawl snapshot is 424 TiB of raw HTTP content. Extracting plain text leaves ~20 TB. Filtering and deduplicating leaves 1.5&#8211;2.5 TB. Quoting the 424 TiB as &#8220;text on the web&#8221; overstates by more than two orders of magnitude.</li>
+      <li><strong>On the print side, page images overstate text by 30&#8211;80&#215;.</strong> HathiTrust&#8217;s 791 TB of storage contains about 15 TB of OCR text. Anna&#8217;s Archive&#8217;s 1.1 PB of files holds roughly 34 TB of text. Lyman &amp; Varian&#8217;s influential figure of 208 TB for the Library of Congress is scanned page images; the text is closer to 13 TB.</li>
+      <li><strong>Deduplication is not one number, it is two.</strong> Removing duplicates <em>within</em> a single web crawl strips about 44%. Removing them <em>across</em> eleven years of crawls strips 89%. The FineWeb team found the 89% version discarded the <em>better</em> data &#8212; well-maintained pages get re-crawled, so aggressive global deduplication preferentially deletes them &#8212; and shipped the 44% version instead.</li>
+      <li><strong>&#8220;300 billion pages&#8221; is not 300 billion pages.</strong> Common Crawl&#8217;s cumulative figure counts page <em>captures</em> across snapshots; roughly half of each crawl is a re-fetch of a URL seen before.</li>
+    </ul>
+  </div>
+
+  <!-- WHAT NOBODY MEASURED -->
+  <div class="card">
+    <h2>What nobody has measured</h2>
+    <p class="sub">Three gaps sit directly underneath this question, and each would change the answer if filled.</p>
+    <ul class="note-list">
+      <li><strong>How many times canonical public-domain works appear on the web.</strong> No study counts this. It matters because raw byte counts of pre&#8209;internet text online are inflated by redundancy: a Gutenberg <em>Hamlet</em> is 180 KB, but replicated across, say, five hundred sites it contributes ~90 MB of crawl. The canonical core &#8212; Shakespeare, the King James Bible, Austen, Dickens, the Holmes canon &#8212; is perhaps 50&#8211;100 MB of unique text occupying an unknown but far larger share of raw crawl bytes. This is a paper someone should write.</li>
+      <li><strong>Total newspaper pages ever printed.</strong> The single largest quantity in this analysis has no scholarly estimate at all. The figure used here is derived, and it drives the &#8220;all print ever&#8221; total more than any other input.</li>
+      <li><strong>Google Books&#8217; accessibility breakdown.</strong> Google has never published how its 40 million scanned volumes divide between full view, preview, snippet and no-preview. That single unpublished table is the largest uncertainty in the &#8220;freely readable&#8221; tier.</li>
+      <li><strong>Modern spam prevalence in web crawls.</strong> There is no credible recent measurement. Historical studies (2006&#8211;2011) put web spam at 6&#8211;22% of crawled pages; nothing comparable exists for the present.</li>
+    </ul>
+  </div>
+
+  <!-- DEBUNK -->
+  <div class="card">
+    <h2>Figures in circulation that don&#8217;t hold up</h2>
+    <ul class="debunk">
+      <li><span class="claim">&#8220;Anna&#8217;s Archive holds 1.1 petabytes of books.&#8221;</span> It holds 1.1 PB of <em>files</em>. 68.7 million books at ~500 KB of text each is about 34 TB &#8212; the PDF and DjVu containers inflate the text by roughly 32&#215;. The same error applies to Library Genesis&#8217;s 320 TiB and HathiTrust&#8217;s 791 TB.</li>
+      <li><span class="claim">&#8220;Common Crawl contains 300 billion pages / the whole web.&#8221;</span> Page captures, not distinct documents, and Common Crawl&#8217;s own engineer has said plainly that the claim it contains the entire web is &#8220;absolutely not true.&#8221; It is a centrality-weighted sample, heavily skewed toward English and high-PageRank pages.</li>
+      <li><span class="claim">&#8220;74% of new web pages are AI-generated&#8221; (Ahrefs, 2025).</span> The measured claim is that 74.2% <em>contain any</em> AI-assisted text. The same study puts <em>pure</em> AI content at 2.5%. The detector is proprietary and undisclosed, and the vendor sells SEO tooling.</li>
+      <li><span class="claim">&#8220;90% of online content will be AI-generated by 2026&#8221; (Europol, 2022).</span> A projection, not a measurement, and it did not happen. Best current evidence puts machine-generated content at roughly 30&#8211;50% of <em>new articles</em> since 2024, and single digits to ~15% of the cumulative web archive.</li>
+      <li><span class="claim">Kevin Kelly&#8217;s &#8220;all the works of humankind = 50 petabytes.&#8221;</span> Accurate as stated, but it is over 99% audio, video and images. The <em>text</em> inside his list is about 35 TB.</li>
+      <li><span class="claim">&#8220;Google Books has digitised the world&#8217;s literature.&#8221;</span> It has scanned 40 million of an estimated 129.9 million books &#8212; about 31% &#8212; and releases bulk text for none of it. The only text derivative Google ever published is the Ngram corpus, which is deliberately non-reconstructible counts, not readable text.</li>
+    </ul>
+  </div>
+
+  <!-- CONFIDENCE -->
+  <div class="card">
+    <h2>What to believe, graded</h2>
+    <ul class="conf">
+      <li><span class="tag"><span class="grade best">Solid</span></span><span><span class="claim">Born-digital web text vastly exceeds digitised pre-internet text.</span> True under every combination of assumptions in the matrix above. The narrowest defensible gap is about 2:1; the widest about 1,200:1. The direction never reverses.</span></li>
+      <li><span class="tag"><span class="grade best">Solid</span></span><span><span class="claim">The barrier between scanned and readable is legal, not technical.</span> Directly documented: Google releases no bulk text, HathiTrust requires a signed IP-locked agreement, Newspapers.com paywalls a billion pages.</span></li>
+      <li><span class="tag"><span class="grade best">Solid</span></span><span><span class="claim">Project Gutenberg is ~0.0016% of the indexed web.</span> Both sides precisely measured: 20.4 GB for 56,000 documents (Dolma&#8217;s measurement), against Epoch&#8217;s 1.75 PB.</span></li>
+      <li><span class="tag"><span class="grade">Moderate</span></span><span><span class="claim">Freely readable pre-internet text is ~0.3&#8211;0.4% of the web.</span> Depends on the central web estimate, which carries a 16&#215; confidence interval. Quote the range, not the point.</span></li>
+      <li><span class="tag"><span class="grade">Moderate</span></span><span><span class="claim">Newspapers hold more text than books.</span> The per-page conversion is directly measured, but the total page count is derived and unverified.</span></li>
+      <li><span class="tag"><span class="grade weak">Weak</span></span><span><span class="claim">Any specific figure for &#8220;all text ever printed.&#8221;</span> Four independent estimates converge within a factor of ~4, which is reassuring but not precision. The newspaper term dominates and is the least sourced.</span></li>
+      <li><span class="tag"><span class="grade weak">Unsupported</span></span><span><span class="claim">Any claim about how much of the web is duplicated classics.</span> Nobody has measured it. Do not let anyone tell you otherwise, in either direction.</span></li>
+    </ul>
+  </div>
+
+  <!-- SOURCES -->
+  <div class="card">
+    <h2>Sources</h2>
+    <ol class="src">
+      <li>Villalobos et al., <a href="https://epoch.ai/publications/will-we-run-out-of-data-limits-of-llm-scaling-based-on-human-generated-data">&#8220;Will we run out of data?&#8221;</a> Epoch AI / ICML 2024 &#8212; the 510T-token indexed-web estimate, its 130T&#8211;2,100T interval, and the measured 7,000 bytes of plain text per page.</li>
+      <li>Penedo et al., <a href="https://arxiv.org/html/2406.17557v1">FineWeb</a> (NeurIPS 2024) &#8212; 18.5T tokens from 114 crawls; the 89% global vs 44% per-dump deduplication finding, and the 21% boilerplate measurement.</li>
+      <li>Penedo et al., <a href="https://arxiv.org/pdf/2306.01116">RefinedWeb</a> (2023) &#8212; the stage-by-stage filtering funnel; 11.67% of Common Crawl documents survive.</li>
+      <li><a href="https://commoncrawl.org/blog/august-2025-crawl-archive-now-available">Common Crawl monthly statistics</a> and the <a href="https://www.mozillafoundation.org/en/research/library/generative-ai-training-data/common-crawl/">Mozilla Foundation&#8217;s 2024 report</a> &#8212; 424 TiB raw vs 6.6 TiB compressed WET per crawl; the ~50% re-fetch rate.</li>
+      <li>Taycher, <a href="http://booksearch.blogspot.com/2010/08/books-of-world-stand-up-and-be-counted.html">&#8220;Books of the world, stand up and be counted&#8221;</a> (Google, Aug 2010) &#8212; 129,864,880 distinct book editions. Never updated.</li>
+      <li><a href="https://www.hathitrust.org/member-libraries/resources-for-librarians/data-resources/research-datasets/">HathiTrust Research Datasets</a> and <a href="https://old.www.hathitrust.org/about.html">collection statistics</a> &#8212; 5.4 TB of public-domain page text for 6.65M volumes (812 KB/volume), 791 TB total storage, 6.18B pages.</li>
+      <li><a href="https://blog.google/products/search/google-books-library-project/">Google Books Library Project</a> (Jan 2023) &#8212; 40M+ volumes scanned; <a href="https://www.google.com/googlebooks/common.html">access modes</a>, with no published breakdown.</li>
+      <li>Dell et al., <a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/ffeb860479ccae44d84c0de32acd693d-Paper-Datasets_and_Benchmarks.pdf">American Stories</a> (NeurIPS 2023) &#8212; 65.6B tokens from ~20M Chronicling America pages, giving the 3,313 tokens-per-newspaper-page constant.</li>
+      <li><a href="https://www.ancestry.com/corporate/blog/one-billion-newspaper-pages--infinite-family-history-discoveries">Newspapers.com passes one billion pages</a> (Sept 2024); <a href="https://newsroom.loc.gov/news/library-of-congress-unveils-major-upgrades-to-chronicling-america-website/s/5e0ef838-0fbe-4c6a-b810-476fbfc94a55">Chronicling America, 23M+ pages</a> (Aug 2025).</li>
+      <li>Lyman &amp; Varian, <a href="https://e-tcs.org/wp-content/uploads/2012/10/Lyman_y_Varian_-_HMI2003.pdf">How Much Information? 2003</a>; Lesk, <a href="https://www.lesk.com/mlesk/ksg97/ksg.html">How Much Information Is There In The World?</a> (1997); Kelly, <a href="https://www.historyofinformation.com/detail.php?id=1202">&#8220;Scan This Book!&#8221;</a> (2006) &#8212; the three classic denominators, each measuring page images rather than text.</li>
+      <li>Gao et al., <a href="https://arxiv.org/pdf/2101.00027">The Pile</a>; <a href="https://huggingface.co/datasets/allenai/dolma">Dolma</a>; Rae et al., <a href="https://arxiv.org/pdf/2112.11446">MassiveText/Gopher</a> &#8212; the print share of assembled training corpora, from 20% down to 0.18%, driven by rights rather than supply.</li>
+      <li>Elazar et al., <a href="https://arxiv.org/pdf/2310.20707">What&#8217;s In My Big Data?</a> (ICLR 2024) and Lee et al., <a href="https://www.cis.upenn.edu/~ccb/publications/deduplicating-training-data-makes-lms-better.pdf">Deduplicating Training Data Makes LMs Better</a> (ACL 2022) &#8212; document-level duplication of 50&#8211;60% in major corpora, dominated by machine-generated boilerplate rather than literature.</li>
+      <li>Thompson et al., <a href="https://aclanthology.org/2024.findings-acl.103/">&#8220;A Shocking Amount of the Web is Machine Translated&#8221;</a> (ACL Findings 2024); <a href="https://graphite.io/five-percent/ai-now-writes-as-many-online-articles-as-humans-do">Graphite</a> and <a href="https://ahrefs.com/blog/what-percentage-of-new-content-is-ai-generated">Ahrefs</a> on machine-generated share (both SEO vendors &#8212; treat accordingly).</li>
+      <li>Jinha, <a href="https://onlinelibrary.wiley.com/doi/abs/10.1087/20100308">&#8220;Article 50 million&#8221;</a> (2010); <a href="https://lil.law.harvard.edu/our-work/caselaw-access-project">Caselaw Access Project</a> (40M pages &#8594; 38.1 GB); <a href="https://www.gpo.gov/who-we-are/news-media/news-and-press-releases/gpo-completes-digitizing-all-issues-of-the-federal-register">GPO Federal Register</a>; <a href="https://en.wikipedia.org/wiki/Project_Gutenberg">Project Gutenberg</a>.</li>
+    </ol>
+    <p class="meta">Conversion basis: 4.0 bytes per token for English web prose, ~500 KB of plain text per 100,000-word book &#8212; the latter independently validated at 551 KB (Books3), 525 KB (MassiveText) and 812 KB (HathiTrust, including serials). Tier totals are midpoints of published ranges; percentages and ratios were computed for this page from those inputs. Figures that are derived rather than measured are labelled as such in the text, and the largest of them &#8212; total newspaper pages ever printed &#8212; is flagged as an order of magnitude only.</p>
+  </div>
+
+  <div class="card brandfoot">
+    <a href="https://principlesvstribes.substack.com/" target="_blank" rel="noopener">
+      <img src="data:image/png;base64,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" alt="Principles vs Tribes">
+    </a>
+    <p>Published by <strong style="color:var(--text-primary)">Principles vs Tribes</strong>.</p>
+    <a class="brand-btn" href="https://principlesvstribes.substack.com/" target="_blank" rel="noopener">Read more at principlesvstribes.substack.com</a>
+  </div>
+
+</div>
+
+<script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById('themeBtn');
+  function isDark(){ var t=root.getAttribute('data-theme'); return t ? t==='dark' : window.matchMedia('(prefers-color-scheme: dark)').matches; }
+  function sync(){ btn.textContent = isDark() ? 'Light mode' : 'Dark mode'; }
+  btn.addEventListener('click', function(){ root.setAttribute('data-theme', isDark() ? 'light' : 'dark'); sync(); });
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', sync);
+  sync();
+  [['wrap1','tip1'],['wrap2','tip2'],['wrap3','tip3'],['wrap4','tip4']].forEach(function(p){
+    var wrap=document.getElementById(p[0]), tip=document.getElementById(p[1]);
+    if(!wrap||!tip) return;
+    wrap.querySelectorAll('.hit').forEach(function(el){
+      if(!el.dataset.t) return;
+      el.setAttribute('tabindex','0');
+      function show(){
+        tip.innerHTML='<div class="tt-t">'+el.dataset.t+'</div><div class="tt-r">'+(el.dataset.r||'')+'</div><div class="tt-v">'+el.dataset.v+'</div>';
+        var wb=wrap.getBoundingClientRect(), eb=el.getBoundingClientRect();
+        tip.style.opacity='1';
+        var tw=tip.offsetWidth, th=tip.offsetHeight;
+        var x=eb.left-wb.left+eb.width/2-tw/2, y=eb.top-wb.top-th-10;
+        if(y<0) y=eb.bottom-wb.top+10;
+        x=Math.max(4, Math.min(x, wb.width-tw-4));
+        tip.style.left=x+'px'; tip.style.top=y+'px';
+      }
+      function hide(){ tip.style.opacity='0'; }
+      el.addEventListener('mouseenter',show); el.addEventListener('focus',show);
+      el.addEventListener('mouseleave',hide); el.addEventListener('blur',hide);
+    });
+  });
+})();
+</script>
+</body>
+</html>
